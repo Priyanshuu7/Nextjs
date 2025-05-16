@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
+// this is updated throigh terminal //
 export default function Home() {
   return (
     <div
