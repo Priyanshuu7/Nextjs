@@ -12,7 +12,7 @@ export async function handleSubmit(formData : FormData) {
     if (!user) {
         return redirect("/api/auth/register")
     }
-
+   
     const title = formData.get("title")
     const content = formData.get("content")
     const url = formData.get("url")

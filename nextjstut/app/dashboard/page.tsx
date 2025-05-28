@@ -1,11 +1,12 @@
 import { buttonVariants } from "@/components/ui/button";
-import { futimes } from "fs";
 import  Link  from "next/link";
 import { prisma } from "../utils/db";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { BlogPostCard } from "@/components/general/BlogPostCard";
 
 async function getData(userId: String){
+
+    await new Promise ((resolve)=> setTimeout(resolve,2000));
     const data = await prisma.blogPost.findMany({
         where:{
             authorId : userId as string
