@@ -19,7 +19,7 @@ async function getData(userId: String){
 }
 
 
-
+// defltu fun//
 export default async function DashboardRoute() {
     const { getUser}= getKindeServerSession();
     const user = await getUser(); 
