@@ -32,7 +32,7 @@ export async function handleSubmit(formData : FormData) {
                     ?.picture as string,
                 authorName: user
                     ?.given_name as string
-            }
+            } 
         })
 
     revalidatePath("/")
